@@ -3,7 +3,7 @@ abstract class Abstraction {
     abstract void turnOff();
 }
 
-class TVRemote extends Geeks {
+class TVRemote extends Abstraction {
     @Override
     void turnOn() {
         System.out.println("TV is turned ON.");
@@ -17,7 +17,7 @@ class TVRemote extends Geeks {
 
 public class Main {
     public static void main(String[] args) {
-        Geeks remote = new TVRemote();
+        Abstraction remote = new TVRemote();
         remote.turnOn();   
         remote.turnOff();  
     }
