@@ -15,7 +15,7 @@ class TVRemote extends Abstraction {
     }
 }
 
-public class Main {
+public class Abstraction {
     public static void main(String[] args) {
         Abstraction remote = new TVRemote();
         remote.turnOn();   
